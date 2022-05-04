@@ -46,9 +46,8 @@ public class AppUserService implements UserDetailsService {
                 .getConfirmedAt(appUser.getId())
                 .isEmpty();
 
-        if (userExists || tokenExists) {
+        if (userExists && !tokenExists) {
             // TODO check of attributes are the same and
-            // TODO if email not confirmed send confirmation email.
 
             throw new IllegalStateException("email already taken");
         }
