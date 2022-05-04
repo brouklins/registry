@@ -1,6 +1,6 @@
-# Login Registration Backend 
+# Backend de Login, Registro e envio de Email
 
-Complete login registration backend system using Spring Boot.
+Backend completo de login e registro usando Spring Boot.
 
 - [x] Spring Boot
 - [x] Spring Security
@@ -8,10 +8,24 @@ Complete login registration backend system using Spring Boot.
 - [x] Email verification with expiry
 - [x] Spring Boot
 
+Instalar o mailDev para teste:
+
+$ npm install -g maildev
+
+$maildev
+
+Se preferir utilizando docker:
+
+$ docker run -p 1080:1080 -p 1025:1025 maildev/maildev
+
+Para acessar o email:
+
+http://0.0.0.0:1080
+
 ## Diagram
 ![Screenshot 2021-01-13 at 23 38 08](https://user-images.githubusercontent.com/40702606/104789980-15581a00-578e-11eb-998d-30f2e6a9f461.png)
 
-## Example requests
+## Exemplos de requisições
 ### Postman
 ![Screenshot 2021-01-13 at 23 37 57](https://user-images.githubusercontent.com/40702606/104790087-7a137480-578e-11eb-8141-307a8850c39e.png)
 
